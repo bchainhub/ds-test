@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.5.0;
+pragma solidity >=1.1.0;
 
 contract DSTest {
     event log                    (string);
@@ -39,7 +39,7 @@ contract DSTest {
     bool private _failed;
 
     address constant HEVM_ADDRESS =
-        address(bytes20(uint160(uint256(keccak256('hevm cheat code')))));
+        address(0xcb69fc06a12b7a6f30e2a3c16a3b5d502cd71c20f2f8);
 
     modifier mayRevert() { _; }
     modifier testopts(string memory) { _; }
