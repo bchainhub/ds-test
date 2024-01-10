@@ -78,7 +78,7 @@ contract DSTest {
     function hasHEVMContext() internal view returns (bool) {
         uint256 hevmCodeSize = 0;
         assembly {
-            hevmCodeSize := extcodesize(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D)
+            hevmCodeSize := extcodesize(0xcb69fc06a12b7a6f30e2a3c16a3b5d502cd71c20f2f8)
         }
         return hevmCodeSize > 0;
     }
