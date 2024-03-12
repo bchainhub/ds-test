@@ -15,6 +15,8 @@
 
 pragma solidity >=1.1.0;
 
+import {Checksum} from "./checksum.sol";
+
 contract DSTest {
     event log                    (string);
     event logs                   (bytes);
