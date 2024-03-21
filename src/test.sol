@@ -79,8 +79,9 @@ contract DSTest {
 
     function hasHEVMContext() internal view returns (bool) {
         uint256 hevmCodeSize = 0;
+        address hevm = Checksum.toIcan(uint160(bytes20(hex"fc06a12b7a6f30e2a3c16a3b5d502cd71c20f2f8")));
         assembly {
-            hevmCodeSize := extcodesize(HEVM_ADDRESS)
+            hevmCodeSize := extcodesize(hevm)
         }
         return hevmCodeSize > 0;
     }
