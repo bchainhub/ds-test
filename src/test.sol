@@ -40,8 +40,7 @@ contract DSTest {
     bool public IS_TEST = true;
     bool private _failed;
 
-    address immutable HEVM_ADDRESS =
-        Checksum.toIcan(uint160(bytes20(hex"fc06a12b7a6f30e2a3c16a3b5d502cd71c20f2f8")));
+    address HEVM_ADDRESS = Checksum.toIcan(uint160(bytes20(hex"fc06a12b7a6f30e2a3c16a3b5d502cd71c20f2f8")));
 
     modifier mayRevert() { _; }
     modifier testopts(string memory) { _; }
