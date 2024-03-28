@@ -2,7 +2,7 @@
 
 pragma solidity ^1.1.0;
 
-library Checksum {
+library DSTestChecksum {
 
     function _getChainId() internal view returns (uint8) {
         return uint8(block.chainid);
